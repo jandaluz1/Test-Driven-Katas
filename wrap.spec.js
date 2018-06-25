@@ -13,7 +13,10 @@ describe('wrap', () => {
         20
       )
     ).to.equal(
-      'Lorem ipsum dolor \nsit eu amet, elit na\nmagna sem amet nulla\nvel purus ac ligula.'
+      'Lorem ipsum dolor\nsit eu amet, elit na\nmagna sem amet nulla\nvel purus ac ligula.'
     );
   });
+  it('returns hello world', () => {
+    expect(wrap("hello world of fullstack",11)).to.equal("hello world\nof\nfullstack");
+  })
 });
